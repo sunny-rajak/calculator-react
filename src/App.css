@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #E3C0D3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calc{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #576066;
+    border: none;
+    box-shadow: -1px -1px 10px #95818D ;
 }
 
-.App-link {
-  color: #61dafb;
+#input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 3rem;
+    /* text-align: right; */
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 360px;
+    border-radius: 20px;
+    height: 90px;
+    border: 2px solid #122932;
+    color: #fff;
+    background-color: #95818D;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 768px) {
+    #input {
+        font-size: 3rem; /* Reduce font size for smaller screens */
+        height: 90px; /* Reduce height */
+    }
+}
+
+@media (max-width: 480px) {
+    #input {
+        font-size: 2rem; /* Further reduce font size for very small screens */
+        height: 70px; /* Adjust height */
+    }
+}
+
+button{
+    border: none;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #E3C0D3;
+    /* background: transparent; */
+    box-shadow: 6px 6px 10px #95818D,-6px -6px 10px #95818D;
+    /* color: #122932; */
+    cursor: pointer;
 }
